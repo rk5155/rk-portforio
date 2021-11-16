@@ -20,6 +20,10 @@
 
         </div>
     </Content1>
+
+    <Title title="スキル" en="Skills" name="fas fa-laptop"></Title>
+
+    <Chart></Chart>
   </div>
 </template>
 
@@ -29,6 +33,8 @@ import Header from './components/Header.vue'
 import MainVisual from './components/MainVisual.vue'
 import Title from './components/Title.vue'
 import Content1 from './components/Content1.vue'
+import Chart from './components/Chart.vue'
+
 
 export default {
   name: 'App',
@@ -37,7 +43,8 @@ export default {
     Header,
     MainVisual,
     Title,
-    Content1
+    Content1,
+    Chart
   }
 }
 </script>
