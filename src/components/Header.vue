@@ -1,0 +1,41 @@
+<template>
+    <header id="header">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <router-link class="navbar-brand u-font__bold" to="/" exact>Ryu-ki Production</router-link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav4">
+            <ul class="navbar-nav">
+                <HeaderList text="プロフィール"></HeaderList>
+                <HeaderList text="制作実績"></HeaderList>
+                <HeaderList text="スキル"></HeaderList>
+                <HeaderList text="サービス内容・価格"></HeaderList>
+                <HeaderList text="お問い合わせ"></HeaderList>
+            </ul>
+        </div>
+      </nav>
+
+    </header>
+</template>
+
+<script>
+import HeaderList from '../components/HeaderList.vue'
+
+export default {
+  components: {
+    HeaderList
+  }
+}
+</script>
+
+
+<style scoped>
+    #header {
+        border-bottom: 2px solid #42B983;
+    }
+    nav {
+        width: 80%;
+        margin: 0 auto;
+    }
+</style>
