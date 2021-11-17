@@ -31,6 +31,15 @@
       <Content2 v-for="servise in servises" v-bind:key="servise.id" v-bind:servise="servise"></Content2>
     </div>
 
+    <Title title="価格表" en="Price" name="fas fa-yen-sign"></Title>
+
+    <table class="table table-striped">
+        <tbody>
+          
+          <TablePrice v-for="price in prices" v-bind:key="price.id" v-bind:price="price"></TablePrice>
+        </tbody>
+    </table>
+
     
 
 
@@ -45,6 +54,7 @@ import Title from './components/Title.vue'
 import Content1 from './components/Content1.vue'
 import Content2 from './components/Content2.vue'
 import Chart from './components/Chart.vue'
+import TablePrice from './components/TablePrice.vue'
 
 
 export default {
@@ -56,7 +66,8 @@ export default {
     Title,
     Content1,
     Content2,
-    Chart
+    Chart,
+    TablePrice
   },
   data: function() {
     return {
@@ -65,7 +76,16 @@ export default {
                     { id: 2, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
                     { id: 3, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
                     { id: 4, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' }
-                ]
+                ],
+      prices: [
+                    { id: 1, name: "aaa", price: '200,000円〜' },
+                    { id: 2, name: 'aaa', price: '200,000円〜' },
+                    { id: 3, name: 'aaa', price: '200,000円〜' },
+                    { id: 4, name: 'aaa', price: '200,000円〜' },
+                    { id: 5, name: 'aaa', price: '200,000円〜' },
+                    { id: 6, name: 'aaa', price: '200,000円〜' },
+                    { id: 7, name: 'aaa', price: '200,000円〜' },
+                 ]
     }
   }
 }
@@ -81,5 +101,9 @@ export default {
     display: flex;
     flex-flow: wrap;
     text-align: center;
+  }
+  .table {
+    width: 980px;
+    margin: 50px auto;
   }
 </style>
