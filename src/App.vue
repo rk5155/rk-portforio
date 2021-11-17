@@ -40,6 +40,8 @@
         </tbody>
     </table>
 
+    <Footer></Footer>
+
     
 
 
@@ -55,6 +57,7 @@ import Content1 from './components/Content1.vue'
 import Content2 from './components/Content2.vue'
 import Chart from './components/Chart.vue'
 import TablePrice from './components/TablePrice.vue'
+import Footer from './components/Footer.vue'
 
 
 export default {
@@ -67,7 +70,8 @@ export default {
     Content1,
     Content2,
     Chart,
-    TablePrice
+    TablePrice,
+    Footer
   },
   data: function() {
     return {
