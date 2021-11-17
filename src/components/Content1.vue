@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    props: ['name', 'text', 'linkText', 'url', 'img'],
+    props: ['img'],
     data () {
         return {
             

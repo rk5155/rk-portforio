@@ -24,6 +24,16 @@
     <Title title="スキル" en="Skills" name="fas fa-laptop"></Title>
 
     <Chart></Chart>
+
+    <Title title="サービス内容" en="Services" name="fas fa-taxi"></Title>
+
+    <div class="content2">
+      <Content2 v-for="servise in servises" v-bind:key="servise.id" v-bind:servise="servise"></Content2>
+    </div>
+
+    
+
+
   </div>
 </template>
 
@@ -33,6 +43,7 @@ import Header from './components/Header.vue'
 import MainVisual from './components/MainVisual.vue'
 import Title from './components/Title.vue'
 import Content1 from './components/Content1.vue'
+import Content2 from './components/Content2.vue'
 import Chart from './components/Chart.vue'
 
 
@@ -44,7 +55,18 @@ export default {
     MainVisual,
     Title,
     Content1,
+    Content2,
     Chart
+  },
+  data: function() {
+    return {
+      servises: [
+                    { id: 1, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
+                    { id: 2, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
+                    { id: 3, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
+                    { id: 4, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' }
+                ]
+    }
   }
 }
 </script>
@@ -54,5 +76,10 @@ export default {
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     
+  }
+  .content2 {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
   }
 </style>
