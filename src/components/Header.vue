@@ -7,11 +7,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav4">
             <ul class="navbar-nav">
-                <HeaderList text="プロフィール"></HeaderList>
-                <HeaderList text="制作実績"></HeaderList>
-                <HeaderList text="スキル"></HeaderList>
-                <HeaderList text="サービス内容・価格"></HeaderList>
-                <HeaderList text="お問い合わせ"></HeaderList>
+                <HeaderList v-for="list in navList" :key="list.text" :list="list"></HeaderList>
             </ul>
         </div>
       </nav>
@@ -25,6 +21,32 @@ import HeaderList from '../components/HeaderList.vue'
 export default {
   components: {
     HeaderList
+  },
+  data () {
+    return {
+      navList: [
+        {
+          text: 'プロフィール',
+          url: '/profile'
+        },
+        {
+          text: '制作実績',
+          url: '/production'
+        },
+        {
+          text: 'スキル',
+          url: '/skill'
+        },
+        {
+          text: 'サービス内容・価格',
+          url: '/profile'
+        },
+        {
+          text: 'お問い合わせ',
+          url: '/contact'
+        },
+      ]
+    }
   }
 }
 </script>
