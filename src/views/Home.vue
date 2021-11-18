@@ -1,7 +1,5 @@
 <template>
     <div id="app">
-    
-        <Header></Header>
 
         <MainVisual></MainVisual>
 
@@ -41,34 +39,29 @@
             </tbody>
         </table>
 
-        <Footer></Footer>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Header from '../components/Header.vue'
 import MainVisual from '../components/MainVisual.vue'
 import Title from '../components/Title.vue'
 import Content1 from '../components/Content1.vue'
 import Content2 from '../components/Content2.vue'
 import Chart from '../components/Chart.vue'
 import TablePrice from '../components/TablePrice.vue'
-import Footer from '../components/Footer.vue'
 
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
-    Header,
     MainVisual,
     Title,
     Content1,
     Content2,
     Chart,
-    TablePrice,
-    Footer
+    TablePrice
   },
   data: function() {
     return {
