@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
     #header {
-        border-bottom: 2px solid #42B983;
+        border-bottom: 2px solid #333333;
     }
     nav {
         width: 80%;
