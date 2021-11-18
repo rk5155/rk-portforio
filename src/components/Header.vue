@@ -31,7 +31,7 @@ export default {
         },
         {
           text: '制作実績',
-          url: '/production'
+          url: '/production/all'
         },
         {
           text: 'スキル',

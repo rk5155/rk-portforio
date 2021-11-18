@@ -20,7 +20,7 @@ export default new Router({
         component: Profile
     },
     {
-        path: '/Production',
+        path: '/Production/:id',
         component: Production
     },
     {
