@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
     #header {
-        border-bottom: 2px solid #333333;
+        background-color: #FAFAFA;
     }
     nav {
         width: 80%;

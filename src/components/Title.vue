@@ -20,7 +20,7 @@ export default {
 <style scoped>
     .title {
         text-align: center;
-        background-color: #E0F8EC;
+        background-color: #FAFAFA;
         padding: 34px 0;
     }
     .title i {
