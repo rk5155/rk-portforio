@@ -41,4 +41,7 @@ export default {
     padding: 10px;
     color: #212529;
 }
+.content1__text {
+    width: 60%;
+}
 </style>

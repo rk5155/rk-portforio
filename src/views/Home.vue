@@ -6,16 +6,17 @@
         <Title title="プロフィール" en="profile" name="fas fa-user"></Title>
 
         <Content1 img='/img/IMG_4933.f3421192.jpg'>
-            <div>
+            <div class="content1__text">
                 <h3>Ryu-ki</h3>
 
                 <p>フリーランスエンジニア</p>
 
-                <p>大学卒業後アパレル会社にて勤務▶︎IT企業に転職▶︎フリーランス独立</p>
+                <p>大学卒業後アパレル会社にて勤務▶︎契約社員でプログラミングの仕事を始める▶︎フリーランス独立</p>
 
                 <p>Vue.jsを使用した、高速なWEBサイト制作が得意<br>顧客を待たせない、高速なサイトをお作りいたします。</p>
 
-                <a href="">詳しい経歴プロフィールはこちら</a>
+                
+                <router-link class="nav-link" to="/profile" active-class="link-active" exact>詳しい経歴プロフィールはこちら</router-link>
 
             </div>
         </Content1>
