@@ -67,10 +67,10 @@ export default {
   data: function() {
     return {
       servises: [
-                    { id: 1, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
-                    { id: 2, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
-                    { id: 3, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' },
-                    { id: 4, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト' }
+                    { id: 1, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト', class: 'content2__title--red' },
+                    { id: 2, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト', class: 'content2__title--perple'  },
+                    { id: 3, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト', class: 'content2__title--yellow'  },
+                    { id: 4, h3: "Webサイト制作・カスタマイズ", p: 'テキストテキストテキストテキスト', list1: 'テキスト', list2: 'テキスト', list3: 'テキストテキスト', list4: 'テキスト', class: 'content2__title--pink'  }
                 ],
       prices: [
                     { id: 1, name: "aaa", price: '200,000円〜' },

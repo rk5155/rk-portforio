@@ -1,7 +1,7 @@
 <template>
     
         <div class="content2__box">
-            <h3>{{ servise.h3 }}</h3>
+            <h3 class="content2__title" v-bind:class="servise.class">{{ servise.h3 }}</h3>
             <p>{{ servise.p }}</p>
 
             <ul>
@@ -11,7 +11,8 @@
                 <li>{{ servise.list4 }}</li>
             </ul>
 
-            <a href="">詳しく見る</a>
+            
+            <a href="" class="content2__btn">詳しく見る</a>
         </div>
 
         
@@ -34,17 +35,69 @@ export default {
 <style scoped>
 .content2__box {
     width: 50%;
-    padding: 40px;
+    padding: 80px 50px;
+}
+.content2__box:nth-child(odd) {
+    border-right: 1px solid #F2F2F2;
+}
+.content2__box:nth-child(1), .content2__box:nth-child(2) {
+    border-bottom: 1px solid #F2F2F2;
+} 
+.content2__title {
+    margin-bottom: 40px;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+.content2__title::before {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 5px;
+    content: '';
+    border-radius: 3px;
+}
+.content2__title--red::before {
+    background: #FA5858;
+}
+.content2__title--perple::before {
+    background: #AC58FA;
+}
+.content2__title--yellow::before {
+    background: #F2F5A9;
+}
+.content2__title--pink::before {
+    background: #F781F3;
 }
 .content2__box ul {
     display: flex;
     flex-flow: wrap;
+    margin: 30px 0;
+    padding: 0;
 }
 .content2__box li {
     list-style: none;
-    width: 50%;
+    width: calc(50% - 4px);
+    border: 1px dotted;
+    margin-bottom: 4px;
+}
+.content2__box li:nth-child(even) {
+    margin-left: 4px;
+}
+.content2__box li:nth-child(odd) {
+    margin-right: 4px;
 }
 .content2__box p {
-    text-align: left;
+    
 }
+.content2__btn {
+  color: #ffffff;
+  background-color: #3B4452;
+  border-radius: 100vh;
+  padding: 10px 40px;
+}
+
 </style>

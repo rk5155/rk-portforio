@@ -5,6 +5,7 @@ import Profile from './views/Profile.vue'
 import Production from './views/Production.vue'
 import Skill from './views/Skill.vue'
 import Contact from './views/Contact.vue'
+import Service from './views/Service.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
     {
         path: '/Contact',
         component: Contact
+    },
+    {
+        path: '/service',
+        component: Service
     }
   ]
 })
