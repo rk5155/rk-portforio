@@ -7,48 +7,76 @@ export default {
   data () {
     return {
       data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-        fontSize: 30,
+        labels: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'May', 'June'],
         datasets: [
           {
             label: '',
-            data: [10, 20, 30, 40, 50, 30],
+            data: [95, 90, 70, 40, 50, 30],
             backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
+              '#FA5858',
+              '#F781F3',
+              '#F4FA58',
+              '#58FAAC',
+              '#AC58FA',
+              '#FF8000'
+            ]
           }
         ]
       },
-      options: {
-        scales: {
-          xAxes: [{
-            scaleLabel: {
-              display: true
+      options: {                             //◆オプション
+            responsive: true,                  //グラフ自動設定
+            legend: {                          //凡例設定
+                display: false                 //表示設定
+           },
+           tooltips: {             //hover 時の文字を非表示
+            enabled: false
+           },
+            title: {                           //タイトル設定
+                display: true,                 //表示設定
+                fontSize: 30,                  //フォントサイズ
+                text: ''                //ラベル
             },
-            
-          }],
-          yAxes: [{
-            ticks: {
-              beginAtZero: true,
-              stepSize: 10,
+            scales: {                          //軸設定
+                yAxes: [{                      //y軸設定
+                    display: true,             //表示設定
+                    scaleLabel: {              //軸ラベル設定
+                       display: true,          //表示設定
+                       labelString: '',  //ラベル
+                       fontSize: 30               //フォントサイズ
+                    },
+                    ticks: {                      //最大値最小値設定
+                        min: 0,                   //最小値
+                        max: 100,                  //最大値
+                        fontSize: 30,             //フォントサイズ
+                        stepSize: 25               //軸間隔
+                    },
+                }],
+                xAxes: [{                         //x軸設定
+                    display: true,                //表示設定
+                    barPercentage: 1.4,           //棒グラフ幅
+                    categoryPercentage: 0.4,      //棒グラフ幅
+                    scaleLabel: {                 //軸ラベル設定
+                       display: true,             //表示設定
+                       labelString: '',  //ラベル
+                       fontSize: 30               //フォントサイズ
+                    },
+                    ticks: {
+                        fontSize: 30             //フォントサイズ
+                    },
+                    gridLines: {
+                      display: false
+                    }
+                }],
+            },
+            layout: {                             //レイアウト
+                padding: {                          //余白設定
+                    left: 100,
+                    right: 50,
+                    top: 0,
+                    bottom: 0
+                }
             }
-          }]
         }
-      }
     }
   },
   mounted () {
