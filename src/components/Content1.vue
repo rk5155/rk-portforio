@@ -30,9 +30,9 @@ export default {
     padding: 50px 0;
 }
 .content1 img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 340px;
+    height: auto;
+    border-radius: 10%;
 }
 .content1 a {
     margin-top: 20px;

@@ -5,7 +5,7 @@
 
         <Title title="プロフィール" en="profile" name="fas fa-user"></Title>
 
-        <Content1 img='/img/IMG_4933.f3421192.jpg'>
+        <Content1 :img='img'>
             <div class="content1__text">
                 <h3>Ryu-ki</h3>
 
@@ -66,6 +66,11 @@ export default {
     Content2,
     Chart,
     TablePrice
+  },
+  data() {
+      return {
+          img: require('@/assets/IMG_4933.jpg')
+      }
   }
 }
 </script>
