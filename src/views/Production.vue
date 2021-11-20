@@ -112,7 +112,7 @@ export default {
 <style>
 .container {
     text-align: center;
-    margin: 80px auto;
+    margin: 70px auto;
 }
 .container__img {
     height: 310px;

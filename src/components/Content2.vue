@@ -99,6 +99,7 @@ export default {
   background-color: #3B4452;
   border-radius: 100vh;
   padding: 10px 40px;
+  display: inline-block;
 }
 
 </style>
