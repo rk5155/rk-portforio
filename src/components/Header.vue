@@ -39,7 +39,7 @@ export default {
         },
         {
           text: 'サービス内容・価格',
-          url: '/service'
+          url: '/service/all'
         },
         {
           text: 'お問い合わせ',

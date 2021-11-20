@@ -12,7 +12,8 @@
             </ul>
 
             
-            <a href="" class="content2__btn">詳しく見る</a>
+            
+            <router-link class="nav-link content2__btn" :to="servise.url" active-class="link-active" exact>詳しく見る</router-link>
         </div>
 
         

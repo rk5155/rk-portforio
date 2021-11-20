@@ -33,7 +33,7 @@ export default new Router({
         component: Contact
     },
     {
-        path: '/service',
+        path: '/service/:id',
         component: Service
     }
   ]
