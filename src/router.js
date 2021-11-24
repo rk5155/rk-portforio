@@ -36,5 +36,10 @@ export default new Router({
         path: '/service/:id',
         component: Service
     }
-  ]
+  ],
+  //ページ遷移したときトップに移動
+  scrollBehavior () {
+    return { x: 0, y: 0 };
+  }
+  
 })
