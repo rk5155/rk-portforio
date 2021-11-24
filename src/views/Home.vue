@@ -21,6 +21,12 @@
             </div>
         </Content1>
 
+        <Title title="メリット" en="merit" name="fas fa-american-sign-language-interpreting"></Title>
+
+        <TwoBox :meritImg="meritImg" title="大手制作会社にて制作実績あり" text="私は大手制作会社にての制作実績が多数あります。そのノウハウを活かし、優れたWEBサイト制作が可能です。"
+                :meritImg2="meritImg2" title2="訪問者を待たせない高速なWEBサイト作りが可能" text2="最近流行のSPA(シングルページアプリケーション)でのWEBサイト制作が可能です。詳細はお問い合わせ下さい。">
+        </TwoBox>
+
         <Title title="スキル" en="Skills" name="fas fa-laptop"></Title>
 
         <Chart></Chart>
@@ -51,6 +57,7 @@ import Content1 from '../components/Content1.vue'
 import Content2 from '../components/Content2.vue'
 import Chart from '../components/Chart.vue'
 import TablePrice from '../components/TablePrice.vue'
+import TwoBox from '../components/TwoBox.vue'
 // @ は省略記法 src 配下を省略できる
 // import { serviseData } from '../serviseData.js' と同じ
 import { serviseData } from '@/serviseData.js'
@@ -65,11 +72,14 @@ export default {
     Content1,
     Content2,
     Chart,
-    TablePrice
+    TablePrice,
+    TwoBox
   },
   data() {
       return {
-          img: require('@/assets/IMG_4933.jpg')
+          img: require('@/assets/IMG_4933.jpg'),
+          meritImg: require('@/assets/img_01.jpg'),
+          meritImg2: require('@/assets/img_02.jpg')
       }
   }
 }
