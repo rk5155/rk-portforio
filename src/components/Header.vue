@@ -55,6 +55,10 @@ export default {
 <style scoped>
     #header {
         background-color: #FAFAFA;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         z-index: 10;
     }
     nav {
         width: 80%;

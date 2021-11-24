@@ -90,6 +90,7 @@ export default {
 <style>
   body {
     font-family: "Noto Serif JP",serif;
+    letter-spacing: 0.02em;
   }
   .content2 {
     display: flex;

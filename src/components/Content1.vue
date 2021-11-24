@@ -27,7 +27,7 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 70px 0;
+    padding: 140px 0 70px;
 }
 .content1 img {
     width: 340px;
@@ -41,6 +41,10 @@ export default {
     display: inline-block;
     padding: 10px;
     color: #212529;
+}
+.content1 a:hover {
+    background-color: #3B4452;
+    color: #ffffff;
 }
 .content1__text {
     width: 60%;

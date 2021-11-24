@@ -103,5 +103,8 @@ export default {
   padding: 10px 40px;
   display: inline-block;
 }
+.content2__btn:hover {
+    opacity: 0.8;
+}
 
 </style>

@@ -114,13 +114,15 @@
 #main-visual {
     width: 100%;
     min-height: 100vh;
+    /* header の高さ分 */
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    -webkit-animation: fadeIn 4.5s ease 0s 1 normal;
-    animation: fadeIn 4.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 3.5s ease 0s 1 normal;
+    animation: fadeIn 3.5s ease 0s 1 normal;
 }
 @keyframes fadeIn {
     0% {
