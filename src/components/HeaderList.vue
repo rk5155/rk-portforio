@@ -9,3 +9,9 @@ export default {
 props: ['list']
 }
 </script>
+
+<style scoped>
+.link-active {
+    color: #333333!important;
+}
+</style>

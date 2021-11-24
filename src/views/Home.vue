@@ -88,9 +88,8 @@ export default {
 
 
 <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    
+  body {
+    font-family: "Noto Serif JP",serif;
   }
   .content2 {
     display: flex;

@@ -36,7 +36,8 @@ export default {
 }
 .content1 a {
     margin-top: 20px;
-    border: 2px solid #42B983;
+    border: 2px solid #3B4452;
+    border-radius: 10px;
     display: inline-block;
     padding: 10px;
     color: #212529;
