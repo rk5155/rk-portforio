@@ -7,11 +7,11 @@ export default {
   data () {
     return {
       data: {
-        labels: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'May', 'June'],
+        labels: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Vue.js', 'Ruby'],
         datasets: [
           {
             label: '',
-            data: [95, 90, 70, 40, 50, 30],
+            data: [95, 90, 80, 80, 75, 60],
             backgroundColor: [
               '#FA5858',
               '#F781F3',

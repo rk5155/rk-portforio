@@ -51,6 +51,7 @@ export default {
     font-weight: bold;
     position: relative;
     text-align: center;
+    font-size: 26px;
 }
 .content2__title::before {
     position: absolute;
@@ -60,8 +61,9 @@ export default {
     height: 5px;
     content: '';
     border-radius: 3px;
+    background: #3B4452;
 }
-.content2__title--red::before {
+/* .content2__title--red::before {
     background: #FA5858;
 }
 .content2__title--perple::before {
@@ -72,7 +74,7 @@ export default {
 }
 .content2__title--pink::before {
     background: #F781F3;
-}
+} */
 .content2__box ul {
     display: flex;
     flex-flow: wrap;
@@ -92,7 +94,7 @@ export default {
     margin-right: 4px;
 }
 .content2__box p {
-    
+    height: 42px;
 }
 .content2__btn {
   color: #ffffff;

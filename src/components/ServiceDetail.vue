@@ -2,10 +2,7 @@
     <div class="service_detail">
         <h2>{{ title }}</h2>
         <p v-html="topText"></p>
-        <h3>{{ h3 }}</h3>
-        <ul>
-            <li v-for="flow in flows" :key="flow">{{ flow }}</li>
-        </ul>
+        
         <h3>価格表</h3>
 
         <table class="table table-striped">
@@ -15,6 +12,16 @@
             </tbody>
         </table>
 
+        <slot>
+            <p>※サーバー・ドメインのご契約はお客様負担、お客様ご自身でご契約していただきます。（代行でも可能）</p>
+            <p>※ロゴ画像、使用する画像はお客様ご自身でご用意ください（制作する場合別途料金必要）</p>
+            <p>※デザイン案提出後の大幅なデザイン変更には別途料金が発生いたします。</p>
+            <p>※納期目安は3~4週間となります</p>
+            <p>※制作の内容によっては別途追加料金が発生する場合がございます。</p>
+        </slot>
+
+        
+
     </div>
 </template>
 
@@ -22,7 +29,7 @@
 import TablePrice from '../components/TablePrice.vue'
 
 export default {
-    props: ['title', 'topText', 'h3', 'flows', 'prices'],
+    props: ['title', 'topText', 'prices'],
     components: {
         TablePrice
     }

@@ -44,6 +44,7 @@
             
             <TablePrice v-for="price in prices" v-bind:key="price.id" v-bind:price="price"></TablePrice>
             </tbody>
+            <p>※詳しい料金詳細、お見積もりはカウンセリング後にご案内いたします。<br>まずはお問い合わせくださいませ。</p>
         </table>
 
   </div>
