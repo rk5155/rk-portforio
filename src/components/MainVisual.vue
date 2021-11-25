@@ -6,11 +6,24 @@
                     <p>ワンランク上のWEB制作を。</p>
                 </div>
 
-                <kinesis-element v-for="ball in balls" :key="ball.class" :class="ball.class" :strength="ball.strength" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
+                <div v-if="$mq === 'lg'">
+                    <kinesis-element  v-for="ball in balls" :key="ball.class" :class="ball.class" :strength="ball.strength" type="rotate" transform-origin="50% 100%" axis="x">
+                         <svg width="150" height="150">
                                 <circle :cx="ball.size" :cy="ball.size" :r="ball.size" :fill="ball.fill"/>
+                         </svg>
+                    </kinesis-element>
+                </div>
+
+                <div v-else event="scroll">
+                    <kinesis-element v-for="ball in balls" :key="ball.class" :class="ball.class" :strength="ball.strength" type="rotate" transform-origin="50% 100%" axis="x">
+                        <svg width="100" height="100">
+                                <circle :cx="ball.size - 30" :cy="ball.size - 30" :r="ball.size- 30" :fill="ball.fill"/>
                         </svg>
-                </kinesis-element>
+                    </kinesis-element>
+                </div>
+                
+                        
+               
             </div>
     </kinesis-container>
 </template>
@@ -102,7 +115,7 @@ export default {
           class: 'orang2',
           size: 60,
           fill: '#FF8000',
-          strength: -10
+          strength: 10
         },
         {
           class: 'mizuiro2',
@@ -156,6 +169,7 @@ export default {
 #main-visual .blue {
     position: absolute;
     top: 20px;
+    right: 7VW;
 }
 #main-visual .red {
     position: absolute;
@@ -174,13 +188,13 @@ export default {
 }
 #main-visual .green {
     position: absolute;
-    top: 700px;
+    bottom: 50px;
     left: 37vw;
 }
 #main-visual .perple {
     position: absolute;
-    top: 780px;
-    left: 300px;
+    bottom: 60px;
+    right: 10vw;
 }
 #main-visual .orang {
     position: absolute;
@@ -201,7 +215,7 @@ export default {
 }
 #main-visual .yellow2 {
     position: absolute;
-    top: 700px;
+    bottom: 4vw;
     right: 2vw;
 }
 #main-visual .pink2 {
@@ -216,18 +230,18 @@ export default {
 }
 #main-visual .perple2 {
     position: absolute;
-    top: 760px;
+    bottom: 10px;
     right: 300px;
 }
 #main-visual .orang2 {
     position: absolute;
     top: 100px;
-    right: 1vw;
+    right: 10vw;
 }
 #main-visual .mizuiro2 {
     position: absolute;
     top: 150px;
-    right: 300px;
+    left: 1vw;
 }
 
 </style>
