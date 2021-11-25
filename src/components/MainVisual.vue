@@ -1,114 +1,120 @@
 <template>
     <kinesis-container id="container">
-        
             <div id="main-visual">
-                <kinesis-element class="blue" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#5882FA"/>
-                        </svg>
-                </kinesis-element>
-                
                 <div class="main-visual__text">
                     <h1>Ryu-ki Production</h1><br>
                     <p>ワンランク上のWEB制作を。</p>
                 </div>
 
-                <kinesis-element class="red" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
+                <kinesis-element v-for="ball in balls" :key="ball.class" :class="ball.class" :strength="ball.strength" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#F78181"/>
+                                <circle :cx="ball.size" :cy="ball.size" :r="ball.size" :fill="ball.fill"/>
                         </svg>
                 </kinesis-element>
-
-                <kinesis-element class="pink" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#F6CEEC"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="yellow" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#F2F5A9"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="green" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#CEF6D8"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="perple" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#D8CEF6"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="orang" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#F5D0A9"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="mizuiro" :strength="20" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#CEF6F5"/>
-                        </svg>
-                </kinesis-element>
-
-
-
-
-
-
-                <kinesis-element class="red2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#FA5858"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="pink2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#F781F3"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="yellow2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#F4FA58"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="green2" :strength="-20" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#58FAAC"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="perple2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#AC58FA"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="orang2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#FF8000"/>
-                        </svg>
-                </kinesis-element>
-
-                <kinesis-element class="mizuiro2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="150" height="150">
-                                <circle cx="70" cy="70" r="70" fill="#2EFEF7"/>
-                        </svg>
-                </kinesis-element>
-
-                
-
-                
             </div>
-        
     </kinesis-container>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      balls: [
+        {
+          class: 'blue',
+          size: 70,
+          fill: '#5882FA',
+          strength: 10
+        },
+        {
+          class: 'red',
+          size: 60,
+          fill: '#F78181',
+          strength: -10
+        },
+        {
+          class: 'pink',
+          size: 50,
+          fill: '#F6CEEC',
+          strength: 10
+        },
+        {
+          class: 'yellow',
+          size: 70,
+          fill: '#F2F5A9',
+          strength: -10
+        },
+        {
+          class: 'green',
+          size: 60,
+          fill: '#CEF6D8',
+          strength: 10
+        },
+        {
+          class: 'perple',
+          size: 50,
+          fill: '#D8CEF6',
+          strength: -10
+        },
+        {
+          class: 'orang',
+          size: 70,
+          fill: '#F5D0A9',
+          strength: 10
+        },
+        {
+          class: 'mizuiro',
+          size: 60,
+          fill: '#CEF6F5',
+          strength: -10
+        },
+        {
+          class: 'red2',
+          size: 50,
+          fill: '#FA5858',
+          strength: 10
+        },
+        {
+          class: 'pink2',
+          size: 70,
+          fill: '#F781F3',
+          strength: -10
+        },
+        {
+          class: 'yellow2',
+          size: 60,
+          fill: '#F4FA58',
+          strength: 10
+        },
+        {
+          class: 'green2',
+          size: 50,
+          fill: '#58FAAC',
+          strength: -10
+        },
+        {
+          class: 'perple2',
+          size: 70,
+          fill: '#AC58FA',
+          strength: 10
+        },
+        {
+          class: 'orang2',
+          size: 60,
+          fill: '#FF8000',
+          strength: -10
+        },
+        {
+          class: 'mizuiro2',
+          size: 50,
+          fill: '#2EFEF7',
+          strength: 10
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style scoped>
 #main-visual {
