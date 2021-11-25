@@ -10,4 +10,14 @@
     margin: 130px 0 130px;
     text-align: center;
 }
+@media screen and (max-width: 580px) {
+    #contact {
+        margin: 120px 0 60px;
+    }
+    iframe {
+        width: 95%;
+        padding-bottom: 100px;
+        height: 1100px;
+    }
+}
 </style>

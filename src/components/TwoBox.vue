@@ -45,5 +45,22 @@ h3 {
     margin-top: 24px;
     font-size: 24px;
 }
+@media screen and (max-width: 580px) { 
+    .two-box {
+        display: block;
+        width: 90%;
+    }
+    .two-box__box {
+        width: 100%;
+    }
+    .two-box__box:nth-child(1) {
+        margin-bottom: 60px;
+    }
+    h3 {   
+        font-size: 22px;
+        height: auto;
+        margin: 16px 0;
+    }
+}
 
 </style>

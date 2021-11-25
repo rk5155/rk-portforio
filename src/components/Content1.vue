@@ -49,4 +49,20 @@ export default {
 .content1__text {
     width: 60%;
 }
+@media screen and (max-width: 580px) { 
+    .content1 {
+        display: block;
+        width: 90%;
+        text-align: center;
+    }
+    .content1 img {
+        width: auto;
+        height: 300px;
+    }
+    .content1__text {
+        width: 100%;
+        text-align: left;
+        margin-top: 40px;
+    }
+}
 </style>

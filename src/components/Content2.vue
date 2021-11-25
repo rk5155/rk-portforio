@@ -106,5 +106,23 @@ export default {
 .content2__btn:hover {
     opacity: 0.8;
 }
+@media screen and (max-width: 580px) {
+    .content2__box {
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 60px 50px;
+    }
+    .content2__box:last-child {
+        border-bottom: none;
+    }
+    .content2__title {
+        font-size: 22px;
+    }
+    .content2__box:nth-child(odd) {
+        border-right: none;
+    }
+    
+}
 
 </style>

@@ -35,4 +35,23 @@ export default {
         font-size: 20px;
         margin-bottom: 0;
     }
+
+    @media screen and (max-width: 580px) {
+        .title {
+            padding: 12px 0;
+        }
+        .title i {
+        font-size: 20px;
+        margin-bottom: 12px;
+        }
+        .title h2 {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        .title p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+    }
 </style>

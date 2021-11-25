@@ -107,4 +107,17 @@ export default {
     width: 980px;
     margin: 50px auto;
   }
+  @media screen and (max-width: 580px) { 
+      h3 {
+        font-size: 22px;
+      }
+      .content2 {
+        display: block;
+      }
+      .table {
+        width: 90%;
+        margin: 50px auto;
+      }
+  }
+
 </style>

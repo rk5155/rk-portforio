@@ -64,4 +64,16 @@ h3 {
 .table {
     width: 100%;
 }
+@media screen and (max-width: 580px) {
+    .service_detail {
+        width: 95%;
+        padding: 40px 20px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
 </style>

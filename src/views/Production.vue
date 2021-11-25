@@ -124,4 +124,29 @@ export default {
 .col-sm {
     margin-bottom: 40px;
 }
+@media screen and (max-width: 580px) {
+    .container {
+        width: 95%;
+        margin: 112px auto 60px;
+    }
+    .container img {
+        width: auto;
+        height: 300px;
+        text-align: center;
+    }
+    .container .detaill {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .container .detaill img {
+        width: auto;
+    }
+    .container ul {
+        width: 100%;
+        padding: 0;
+    }
+    .col-sm {
+        margin-bottom: 50px;
+    }
+}
 </style>

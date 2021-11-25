@@ -137,4 +137,12 @@ dd {
   position: relative;
   z-index: 100;
 }
+@media screen and (max-width: 580px) {
+  .flow {
+    width: 90%;
+  }
+  .flow > li dl {
+    padding: 16px;
+  }
+}
 </style>

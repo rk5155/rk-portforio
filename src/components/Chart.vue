@@ -70,8 +70,8 @@ export default {
             },
             layout: {                             //レイアウト
                 padding: {                          //余白設定
-                    left: 100,
-                    right: 50,
+                    left: 10,
+                    right: 10,
                     top: 0,
                     bottom: 0
                 }
@@ -89,6 +89,15 @@ export default {
 #bar-chart {
     width: 980px!important;
     height: 800px!important;
-    margin: 50px auto;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 580px) {
+  #bar-chart {
+    width: 90%!important;
+    height: auto!important;
+    margin: 0;
+  }
+
 }
 </style>
