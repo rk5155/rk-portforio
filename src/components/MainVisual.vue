@@ -4,7 +4,7 @@
             <div id="main-visual">
                 <kinesis-element class="blue" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#5882FA"/>
+                                <circle cx="70" cy="70" r="70" fill="#5882FA"/>
                         </svg>
                 </kinesis-element>
                 
@@ -15,43 +15,43 @@
 
                 <kinesis-element class="red" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#F78181"/>
+                                <circle cx="70" cy="70" r="70" fill="#F78181"/>
                         </svg>
                 </kinesis-element>
 
-                <kinesis-element class="pink" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
+                <kinesis-element class="pink" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#F6CEEC"/>
+                                <circle cx="70" cy="70" r="70" fill="#F6CEEC"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="yellow" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#F2F5A9"/>
+                                <circle cx="70" cy="70" r="70" fill="#F2F5A9"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="green" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#CEF6D8"/>
+                                <circle cx="70" cy="70" r="70" fill="#CEF6D8"/>
                         </svg>
                 </kinesis-element>
 
-                <kinesis-element class="perple" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
+                <kinesis-element class="perple" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#D8CEF6"/>
+                                <circle cx="70" cy="70" r="70" fill="#D8CEF6"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="orang" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#F5D0A9"/>
+                                <circle cx="70" cy="70" r="70" fill="#F5D0A9"/>
                         </svg>
                 </kinesis-element>
 
-                <kinesis-element class="mizuiro" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
+                <kinesis-element class="mizuiro" :strength="20" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#CEF6F5"/>
+                                <circle cx="70" cy="70" r="70" fill="#CEF6F5"/>
                         </svg>
                 </kinesis-element>
 
@@ -62,43 +62,43 @@
 
                 <kinesis-element class="red2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#FA5858"/>
+                                <circle cx="70" cy="70" r="70" fill="#FA5858"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="pink2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#F781F3"/>
+                                <circle cx="70" cy="70" r="70" fill="#F781F3"/>
                         </svg>
                 </kinesis-element>
 
-                <kinesis-element class="yellow2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
+                <kinesis-element class="yellow2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#F4FA58"/>
+                                <circle cx="70" cy="70" r="70" fill="#F4FA58"/>
                         </svg>
                 </kinesis-element>
 
-                <kinesis-element class="green2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
+                <kinesis-element class="green2" :strength="-20" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#58FAAC"/>
+                                <circle cx="70" cy="70" r="70" fill="#58FAAC"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="perple2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#AC58FA"/>
+                                <circle cx="70" cy="70" r="70" fill="#AC58FA"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="orang2" :strength="-10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#FF8000"/>
+                                <circle cx="70" cy="70" r="70" fill="#FF8000"/>
                         </svg>
                 </kinesis-element>
 
                 <kinesis-element class="mizuiro2" :strength="10" type="rotate" transform-origin="50% 100%" axis="x">
                         <svg width="300" height="300">
-                                <circle cx="80" cy="80" r="80" fill="#2EFEF7"/>
+                                <circle cx="70" cy="70" r="70" fill="#2EFEF7"/>
                         </svg>
                 </kinesis-element>
 
@@ -173,7 +173,7 @@
 }
 #main-visual .perple {
     position: absolute;
-    top: 800px;
+    top: 780px;
     left: 300px;
 }
 #main-visual .orang {
@@ -210,7 +210,7 @@
 }
 #main-visual .perple2 {
     position: absolute;
-    top: 800px;
+    top: 760px;
     right: 300px;
 }
 #main-visual .orang2 {
