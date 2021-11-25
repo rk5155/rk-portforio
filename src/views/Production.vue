@@ -109,7 +109,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
     text-align: center;
     margin: 140px auto 70px;
@@ -130,8 +130,8 @@ export default {
         margin: 112px auto 60px;
     }
     .container img {
-        width: auto;
-        height: 300px;
+        width: 100%;
+        height: auto;
         text-align: center;
     }
     .container .detaill {

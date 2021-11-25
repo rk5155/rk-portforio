@@ -144,5 +144,14 @@ dd {
   .flow > li dl {
     padding: 16px;
   }
+  .flow > li dl dt {
+    font-size: 16px;
+  }
+  .flow > li dl dd {
+    font-size: 14px;
+  }
+  .flow > li dl dt .icon {
+    width: 100px;
+  }
 }
 </style>

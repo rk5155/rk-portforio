@@ -40,4 +40,16 @@ li {
     width: 700px;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 580px) {
+    .detaill img {
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    a{
+   word-break: break-all;
+}
+}
 </style>

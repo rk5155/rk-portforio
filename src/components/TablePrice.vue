@@ -20,7 +20,8 @@ td {
 }
 @media screen and (max-width: 580px) {
     table td:nth-child(1) {
-        width: 25%;
+        width: 40%;
+        font-size: 14px;
     }
 }
 </style>

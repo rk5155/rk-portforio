@@ -9,8 +9,10 @@
         <ServiceDetail v-if="$route.params.id == 2" :title='contentList[1].title' :topText="contentList[1].topText" :prices='contentList[1].prices'></ServiceDetail>
 
         <ServiceDetail v-if="$route.params.id == 3" :title='contentList[2].title' :topText="contentList[2].topText" :prices='contentList[2].prices'>
-          <p>※アップデートが原因でないシステムの不具合の場合には別途料金が必要となります。</p>
-          <p>※SEO対策の提案は必ずSEOが最適化されるものではありません</p>
+          <div class="service_detail__text">
+            <p>※アップデートが原因でないシステムの不具合の場合には別途料金が必要となります。</p>
+            <p>※SEO対策の提案は必ずSEOが最適化されるものではありません</p>
+          </div>
         </ServiceDetail>
 
         <ServiceDetail v-if="$route.params.id == 4" :title='contentList[3].title' :topText="contentList[3].topText" :prices='contentList[3].prices'></ServiceDetail>

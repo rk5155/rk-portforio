@@ -111,7 +111,7 @@ export default {
         width: 100%;
         margin: 0 auto;
         border-bottom: 1px solid #F2F2F2;
-        padding: 60px 50px;
+        padding: 60px 30px;
     }
     .content2__box:last-child {
         border-bottom: none;
@@ -124,6 +124,9 @@ export default {
     }
     .content2__box p {
         height: auto;
+    }
+    .content2__box li {
+        font-size: 14px;
     }
 }
 
