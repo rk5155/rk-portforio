@@ -18,4 +18,9 @@ td {
     font-weight: bold;
     font-size: 20px;
 }
+@media screen and (max-width: 580px) {
+    table td:nth-child(1) {
+        width: 25%;
+    }
+}
 </style>

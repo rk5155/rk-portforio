@@ -56,8 +56,8 @@ export default {
         text-align: center;
     }
     .content1 img {
-        width: auto;
-        height: 300px;
+        width: 100%;
+        height: auto;
     }
     .content1__text {
         width: 100%;

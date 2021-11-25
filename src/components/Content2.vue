@@ -122,7 +122,9 @@ export default {
     .content2__box:nth-child(odd) {
         border-right: none;
     }
-    
+    .content2__box p {
+        height: auto;
+    }
 }
 
 </style>

@@ -61,6 +61,10 @@ h3 {
         height: auto;
         margin: 16px 0;
     }
+    .two-box__box img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 </style>
