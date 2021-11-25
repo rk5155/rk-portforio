@@ -34,6 +34,10 @@ export default {
           url: '/production/all'
         },
         {
+          text: '制作の流れ',
+          url: '/flow'
+        },
+        {
           text: 'スキル',
           url: '/skill'
         },
@@ -58,7 +62,7 @@ export default {
          position: fixed;
          top: 0;
          width: 100%;
-         z-index: 10;
+         z-index: 101;
     }
     nav {
         width: 80%;

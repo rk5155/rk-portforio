@@ -6,6 +6,7 @@ import Production from './views/Production.vue'
 import Skill from './views/Skill.vue'
 import Contact from './views/Contact.vue'
 import Service from './views/Service.vue'
+import ProductionFlow from './views/ProductionFlow.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,10 @@ export default new Router({
     {
         path: '/service/:id',
         component: Service
+    },
+    {
+      path: '/flow',
+      component: ProductionFlow
     }
   ],
   //ページ遷移したときトップに移動

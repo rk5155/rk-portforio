@@ -27,9 +27,13 @@
                 :meritImg2="meritImg2" title2="訪問者を待たせない高速なWEBサイト作りが可能" text2="最近流行のSPA(シングルページアプリケーション)でのWEBサイト制作が可能です。詳細はお問い合わせ下さい。">
         </TwoBox>
 
-        <Title title="スキル" en="Skills" name="fas fa-laptop"></Title>
+        <Title title="制作の流れ" en="flow" name="fas fa-stream"></Title>
 
-        <Chart></Chart>
+        <Flow></Flow>
+
+        <!-- <Title title="スキル" en="Skills" name="fas fa-laptop"></Title> -->
+
+        <!-- <Chart></Chart> -->
 
         <Title title="サービス内容" en="Services" name="fas fa-taxi"></Title>
 
@@ -56,9 +60,10 @@ import MainVisual from '../components/MainVisual.vue'
 import Title from '../components/Title.vue'
 import Content1 from '../components/Content1.vue'
 import Content2 from '../components/Content2.vue'
-import Chart from '../components/Chart.vue'
+// import Chart from '../components/Chart.vue'
 import TablePrice from '../components/TablePrice.vue'
 import TwoBox from '../components/TwoBox.vue'
+import Flow from '../components/Flow.vue'
 // @ は省略記法 src 配下を省略できる
 // import { serviseData } from '../serviseData.js' と同じ
 import { serviseData } from '@/serviseData.js'
@@ -72,9 +77,10 @@ export default {
     Title,
     Content1,
     Content2,
-    Chart,
+    // Chart,
     TablePrice,
-    TwoBox
+    TwoBox,
+    Flow
   },
   data() {
       return {
