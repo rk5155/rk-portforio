@@ -27,7 +27,7 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 140px 0 70px;
+    padding: 70px 0;
 }
 .content1 img {
     width: 340px;

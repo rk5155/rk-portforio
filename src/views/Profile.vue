@@ -48,3 +48,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.content1 {
+    padding-top: 140px;
+}
+</style>

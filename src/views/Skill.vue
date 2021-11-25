@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="skill">
         <Chart></Chart>
     </div>
 </template>
@@ -15,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#skill {
+  margin: 140px 0 70px;
+}
+</style>

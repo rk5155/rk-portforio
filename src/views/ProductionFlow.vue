@@ -16,6 +16,6 @@ export default {
 
 <style scoped>
 #flow {
-    margin: 130px 0 70px;
+    margin: 130px 0 100px;
 }
 </style>

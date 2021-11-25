@@ -7,7 +7,7 @@
 
 <style>
 #contact {
-    margin: 70px 0;
+    margin: 130px 0 130px;
     text-align: center;
 }
 </style>
