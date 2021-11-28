@@ -2,7 +2,7 @@
     <kinesis-container id="container">
             <div id="main-visual">
                 <div class="main-visual__text">
-                    <h1>Ryu-ki Production</h1><br>
+                    <h1>Ryu-ki Production ssss</h1><br>
                     <p>ワンランク上のWEB制作を。</p>
                 </div>
 
