@@ -89,7 +89,7 @@ export default {
 #bar-chart {
     width: 980px!important;
     height: 800px!important;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 @media screen and (max-width: 580px) {
