@@ -24,5 +24,16 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+
+    <!-- bootstrap ヘッダーのメニューをスマホときにクリックしたら閉じる -->
+    <script>
+      $(document).ready(function () {
+        $('.navbar-nav li a').on('click', function(){
+          $('.navbar-collapse').collapse('hide');
+        });
+      });
+    </script>
+      
   </body>
 </html>
