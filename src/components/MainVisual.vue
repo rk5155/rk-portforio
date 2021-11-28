@@ -4,6 +4,7 @@
                 <div class="main-visual__text">
                     <h1>Ryu-ki Production</h1><br>
                     <p>ワンランク上のWEB制作を。</p>
+                    <router-link class="main-visual__btn" to="/contact" active-class="link-active" exact>お問い合わせ</router-link>
                 </div>
 
                 <div v-if="$mq === 'lg'">
@@ -242,6 +243,19 @@ export default {
     position: absolute;
     top: 150px;
     left: 1vw;
+}
+.main-visual__btn {
+  display: inline-block;
+  border: 1px solid #3B4452;
+  color: #3B4452;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.main-visual__btn:hover {
+    background-color: #3B4452;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 </style>
