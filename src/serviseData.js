@@ -15,7 +15,7 @@ export const serviseData = {
                         { id: 5, name: 'レスポンシブ化（スマホ対応）', price: '30,000円〜' },
                         { id: 6, name: 'サイトの修正（1箇所）', price: '1,000円〜' },
                         { id: 7, name: '流し込み', price: '1,000円〜' },
-                        { id: 7, name: 'Webライティング', price: '文字単価1.5円〜' },
+                        { id: 8, name: 'Webライティング', price: '文字単価1.5円〜' },
                      ]
         }
     }
