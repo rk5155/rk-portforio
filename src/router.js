@@ -42,9 +42,13 @@ export default new Router({
       component: ProductionFlow
     }
   ],
-  //ページ遷移したときトップに移動
-  scrollBehavior () {
-    return { x: 0, y: 0 };
+  //ページ遷移したときトップに移動かつ、ブラウザの戻るボタンを押したとき、もとの位置に戻る
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
   }
   
 })
