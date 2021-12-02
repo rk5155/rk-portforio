@@ -1,5 +1,5 @@
 <template>
-    <div class="title">
+    <div class="title" data-aos="fade-up" data-aos-duration="1000">
         <i :class="name"></i>
         <h2>{{ title }}</h2>
         <p>{{ en }}</p>

@@ -5,7 +5,7 @@
 
         <Title title="プロフィール" en="profile" name="fas fa-user"></Title>
 
-        <Content1 :img='img'>
+        <Content1 :img='img' data-aos="fade-up" data-aos-duration="1000">
             <div class="content1__text">
                 <h3>Ryu-ki</h3>
 
@@ -24,12 +24,12 @@
         <Title title="メリット" en="merit" name="fas fa-american-sign-language-interpreting"></Title>
 
         <TwoBox :meritImg="meritImg" title="大手制作会社にて制作実績あり" text="私は大手制作会社にての制作実績が多数あります。そのノウハウを活かし、優れたWEBサイト制作が可能です。"
-                :meritImg2="meritImg2" title2="訪問者を待たせない高速なWEBサイト作りが可能" text2="最近流行のSPA(シングルページアプリケーション)でのWEBサイト制作が可能です。詳細はお問い合わせ下さい。">
+                :meritImg2="meritImg2" title2="訪問者を待たせない高速なWEBサイト作りが可能" text2="最近流行のSPA(シングルページアプリケーション)でのWEBサイト制作が可能です。詳細はお問い合わせ下さい。" data-aos="fade-up" data-aos-duration="1000">
         </TwoBox>
 
         <Title title="制作の流れ" en="flow" name="fas fa-stream"></Title>
 
-        <Flow></Flow>
+        <Flow data-aos="fade-up" data-aos-duration="1000"></Flow>
 
         <!-- <Title title="スキル" en="Skills" name="fas fa-laptop"></Title> -->
 
@@ -37,13 +37,13 @@
 
         <Title title="サービス内容" en="Services" name="fas fa-taxi"></Title>
 
-        <div class="content2">
+        <div class="content2" data-aos="fade-up" data-aos-duration="1000">
         <Content2 v-for="servise in servises" v-bind:key="servise.id" v-bind:servise="servise"></Content2>
         </div>
 
         <Title title="価格表" en="Price" name="fas fa-yen-sign"></Title>
 
-        <table class="table table-striped">
+        <table class="table table-striped" data-aos="fade-up" data-aos-duration="1000">
             <tbody>
             
             <TablePrice v-for="price in prices" v-bind:key="price.id" v-bind:price="price"></TablePrice>
