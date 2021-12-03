@@ -9,7 +9,7 @@
 
                 <div v-if="$mq === 'lg'">
                     <kinesis-element  v-for="ball in balls" :key="ball.class" :class="ball.class" :strength="ball.strength" type="rotate" transform-origin="50% 100%" axis="x">
-                         <svg width="150" height="150">
+                         <svg :class="ball.classSvg" width="150" height="150">
                                 <circle :cx="ball.size" :cy="ball.size" :r="ball.size" :fill="ball.fill"/>
                          </svg>
                     </kinesis-element>
@@ -17,7 +17,7 @@
 
                 <div v-else event="scroll">
                     <kinesis-element v-for="ball in balls" :key="ball.class" :class="ball.class" :strength="ball.strength" type="rotate" transform-origin="50% 100%" axis="x">
-                        <svg width="100" height="100">
+                        <svg :class="ball.classSvg" width="100" height="100">
                                 <circle :cx="ball.size - 30" :cy="ball.size - 30" :r="ball.size- 30" :fill="ball.fill"/>
                         </svg>
                     </kinesis-element>
@@ -35,91 +35,106 @@ export default {
     return {
       balls: [
         {
-          class: 'blue vov roll-in-right',
+          class: 'blue',
+          classSvg: 'vov roll-in-right slow',
           size: 70,
           fill: '#5882FA',
           strength: 10
         },
         {
-          class: 'red vov roll-in-left',
+          class: 'red',
+          classSvg: 'vov roll-in-left slow',
           size: 60,
           fill: '#F78181',
           strength: -10
         },
         {
-          class: 'pink vov roll-in-right',
+          class: 'pink',
+          classSvg: 'vov roll-in-right',
           size: 50,
           fill: '#F6CEEC',
           strength: 10
         },
         {
-          class: 'yellow vov roll-in-left',
+          class: 'yellow',
+          classSvg: 'vov roll-in-left slower',
           size: 70,
           fill: '#F2F5A9',
           strength: -10
         },
         {
-          class: 'green vov roll-in-right',
+          class: 'green',
+          classSvg: 'vov roll-in-right slow',
           size: 60,
           fill: '#CEF6D8',
           strength: 10
         },
         {
-          class: 'perple vov roll-in-left',
+          class: 'perple',
+          classSvg: 'vov roll-in-left slow',
           size: 50,
           fill: '#D8CEF6',
           strength: -10
         },
         {
-          class: 'orang vov roll-in-right',
+          class: 'orang',
+          classSvg: 'vov roll-in-right',
           size: 70,
           fill: '#F5D0A9',
           strength: 10
         },
         {
-          class: 'mizuiro vov roll-in-left',
+          class: 'mizuiro',
+          classSvg: 'vov roll-in-left slow',
           size: 60,
           fill: '#CEF6F5',
           strength: -10
         },
         {
-          class: 'red2 vov roll-in-right',
+          class: 'red2',
+          classSvg: 'vov roll-in-right slow',
           size: 50,
           fill: '#FA5858',
           strength: 10
         },
         {
-          class: 'pink2 vov roll-in-left',
+          class: 'pink2',
+          classSvg: 'vov roll-in-left slower',
           size: 70,
           fill: '#F781F3',
           strength: -10
         },
         {
-          class: 'yellow2 vov roll-in-right',
+          class: 'yellow2',
+          classSvg: 'vov roll-in-right',
           size: 60,
           fill: '#F4FA58',
           strength: 10
         },
         {
-          class: 'green2 vov roll-in-left',
+          class: 'green2',
+          classSvg: 'vov roll-in-left',
           size: 50,
           fill: '#58FAAC',
           strength: -10
         },
         {
-          class: 'perple2 vov roll-in-right',
+          class: 'perple2',
+          classSvg: 'vov roll-in-right slow',
           size: 70,
           fill: '#AC58FA',
           strength: 10
         },
         {
-          class: 'orang2 vov roll-in-left',
+          class: 'orang2',
+          classSvg: 'vov roll-in-left slowest',
           size: 60,
           fill: '#FF8000',
           strength: 10
         },
         {
-          class: 'mizuiro2 vov roll-in-right',
+          class: 'mizuiro2',
+          classSvg: 'vov roll-in-right slower',
           size: 50,
           fill: '#2EFEF7',
           strength: 10
