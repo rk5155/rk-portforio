@@ -1,7 +1,7 @@
 <template>
     <kinesis-container id="container">
             <div id="main-visual">
-                <div class="main-visual__text">
+                <div class="main-visual__text vov zoom-in">
                     <h1>Ryu-ki Production</h1><br>
                     <p>ワンランク上のWEB制作を。</p>
                     <router-link class="main-visual__btn" to="/contact" active-class="link-active" exact>お問い合わせ</router-link>
@@ -35,91 +35,91 @@ export default {
     return {
       balls: [
         {
-          class: 'blue',
+          class: 'blue vov roll-in-right',
           size: 70,
           fill: '#5882FA',
           strength: 10
         },
         {
-          class: 'red',
+          class: 'red vov roll-in-left',
           size: 60,
           fill: '#F78181',
           strength: -10
         },
         {
-          class: 'pink',
+          class: 'pink vov roll-in-right',
           size: 50,
           fill: '#F6CEEC',
           strength: 10
         },
         {
-          class: 'yellow',
+          class: 'yellow vov roll-in-left',
           size: 70,
           fill: '#F2F5A9',
           strength: -10
         },
         {
-          class: 'green',
+          class: 'green vov roll-in-right',
           size: 60,
           fill: '#CEF6D8',
           strength: 10
         },
         {
-          class: 'perple',
+          class: 'perple vov roll-in-left',
           size: 50,
           fill: '#D8CEF6',
           strength: -10
         },
         {
-          class: 'orang',
+          class: 'orang vov roll-in-right',
           size: 70,
           fill: '#F5D0A9',
           strength: 10
         },
         {
-          class: 'mizuiro',
+          class: 'mizuiro vov roll-in-left',
           size: 60,
           fill: '#CEF6F5',
           strength: -10
         },
         {
-          class: 'red2',
+          class: 'red2 vov roll-in-right',
           size: 50,
           fill: '#FA5858',
           strength: 10
         },
         {
-          class: 'pink2',
+          class: 'pink2 vov roll-in-left',
           size: 70,
           fill: '#F781F3',
           strength: -10
         },
         {
-          class: 'yellow2',
+          class: 'yellow2 vov roll-in-right',
           size: 60,
           fill: '#F4FA58',
           strength: 10
         },
         {
-          class: 'green2',
+          class: 'green2 vov roll-in-left',
           size: 50,
           fill: '#58FAAC',
           strength: -10
         },
         {
-          class: 'perple2',
+          class: 'perple2 vov roll-in-right',
           size: 70,
           fill: '#AC58FA',
           strength: 10
         },
         {
-          class: 'orang2',
+          class: 'orang2 vov roll-in-left',
           size: 60,
           fill: '#FF8000',
           strength: 10
         },
         {
-          class: 'mizuiro2',
+          class: 'mizuiro2 vov roll-in-right',
           size: 50,
           fill: '#2EFEF7',
           strength: 10
