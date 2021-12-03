@@ -148,5 +148,9 @@ export default {
     .col-sm {
         margin-bottom: 50px;
     }
+    .container__img {
+        height: auto;
+        margin-bottom: 24px;
+    }
 }
 </style>
