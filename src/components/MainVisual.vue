@@ -142,7 +142,7 @@ export default {
     text-align: center;
     position: relative;
     -webkit-animation: fadeIn 3.5s ease 0s 1 normal;
-    animation: fadeIn 3.5s ease 0s 1 normal;
+    animation: fadeIn 1s ease 0s 1 normal;
 }
 @keyframes fadeIn {
     0% {
